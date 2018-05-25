@@ -1,0 +1,15 @@
+<p class="topnav zb-topnav">{{ad_name}}</p>
+
+<div class="list">
+    {{#each data/data}}
+    <a>
+        <dl>
+            <dt><img src="{{data.cover}}" alt=""></dt>
+            <dd>
+                <p>{{data.title}}</p>
+            </dd>
+        </dl>
+    </a>
+    {{/each}}
+</div>
+<input type="button" value="更多限免佳作>>" class="btn-one">

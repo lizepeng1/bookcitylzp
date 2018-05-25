@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <a href="http://localhost:8089" class="toindex">返回首页</a>
+        <div class="top">
+            <script id="detailH" type="text/x-handlebars-template">
+                <dl>
+                    <dt><img src="{{item.cover}}" alt=""></dt>
+                    <dd>
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.authors}}</p>
+                    </dd>
+                </dl>
+                <div class="btnlist">
+                    <input type="button" value="开始阅读">
+                    <input type="button" value="下载">
+                </div>
+                <div class="content">
+                    <p class="small">{{item.content}}</p>
+                </div>
+                <p class="last">最后一章 : {{item.latest}}</p>
+            </script>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="../js/lib/require.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    require(["detail"])
+</script>

@@ -1,0 +1,15 @@
+<p class="topnav zb-topnav">{{ad_name}}</p>
+
+<div class="list">
+    {{#each data/data}}
+    <a href="../server/detail.html?id={{fiction_id}}">
+        <dl>
+            <dt><img src="{{cover}}" alt=""></dt>
+            <dd>
+                <p>{{title}}</p>
+            </dd>
+        </dl>
+    </a>
+    {{/each}}
+</div>
+<input type="button" value="查看更多。。。" class="btn-one">

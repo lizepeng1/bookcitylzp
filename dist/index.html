@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>八维图书馆</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <header>
+            <img src="./img/pic1.jpg" alt="">
+            <p>
+                <span class="active">书城</span>
+                <span>书架</span>
+            </p>
+            <i class="iconfont icon-wode"></i>
+        </header>
+
+        <div class="swiper-container bigswiper">
+            <div class="swiper-wrapper">
+                <!-- 书城 -->
+                <div class="bookcity swiper-slide">
+                    <div class="scroll">
+                        <div class="toploading" data-up="下拉刷新..."></div>
+                        <!-- 搜索框 -->
+                        <div class="find">
+                            <p>
+                                <i class="iconfont icon-fangdajing"></i> 输入书名/作者
+                            </p>
+                        </div>
+                        <!-- 内容部分 -->
+                        <div class="content">
+                            <!-- 轮播图 -->
+                            <div class="banner swiper-container swiper-no-swiping">
+
+                            </div>
+                            <!--轮播下的导航-->
+                            <div class="nav">
+                                <a href="javascript:;">
+                                    <img src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01NVfuCskSL/W9VPXMnDunLwGT.png" alt="">
+                                    <span>男生</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01NVfuCskSL/W9VPXMnDunLwGT.png" alt="">
+                                    <span>男生</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01NVfuCskSL/W9VPXMnDunLwGT.png" alt="">
+                                    <span>男生</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01NVfuCskSL/W9VPXMnDunLwGT.png" alt="">
+                                    <span>男生</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01NVfuCskSL/W9VPXMnDunLwGT.png" alt="">
+                                    <span>男生</span>
+                                </a>
+                            </div>
+                            <!-- 本周最热 -->
+                            <div class="bighot">
+
+                            </div>
+                            <!-- 重磅推荐 -->
+                            <div class="recommend">
+
+                            </div>
+                            <!-- 女生最爱 -->
+                            <div class="girllove lovelist">
+
+                            </div>
+                            <!-- 男生最爱 -->
+                            <div class="boylove lovelist">
+
+                            </div>
+                            <!--限免-->
+                            <div class="free">
+
+                            </div>
+                            <!-- 精选专题 -->
+                            <div class="beautiful">
+
+                            </div>
+                            <!--上拉加载的内容-->
+                            <div class="uploading">
+
+                            </div>
+
+                            <div class="loading" data-cont="上拉加载..."></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 书架 -->
+                <div class="bookjia swiper-slide">
+                    <div class="bookjia-scroll">
+                        <!-- 搜索框 -->
+                        <div class="find">
+                            <p>
+                                <i class="iconfont icon-fangdajing"></i> 输入书名/作者
+                            </p>
+                            <span class="bj-change">
+                                <i class="iconfont icon-gengduo-2"></i>
+                            </span>
+                        </div>
+                        <div class="bj-list on1e-change">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/lib/require.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    require(["index"]);
+</script>

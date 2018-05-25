@@ -1,0 +1,24 @@
+<p class="topnav  love-topnav">{{ad_name}}</p>
+
+<div class="list love-list">
+    {{#iflength data/data}}{{#each this}}
+    <a>
+        <dl>
+            <dt><img src="{{cover}}" alt=""></dt>
+            <dd>
+                <p>{{title}}</p>
+                <p>{{authors}}</p>
+                <p>{{summary}}</p>
+                <p>
+                    {{#each tags}}
+                    <span>{{this}}</span> {{/each}}
+                </p>
+            </dd>
+        </dl>
+    </a>
+    {{/each}} {{/iflength}}
+</div>
+<div class="common-btn  love-btn">
+    <input type="button" value="换一换">
+    <input type="button" value="{{ad_name}}>>">
+</div>

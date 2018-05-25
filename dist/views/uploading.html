@@ -1,0 +1,18 @@
+<div class="list love-list">
+    {{#each items}}
+    <a>
+        <dl>
+            <dt><img src="{{cover}}" alt=""></dt>
+            <dd>
+                <p>{{title}}</p>
+                <p>{{authors}}</p>
+                <p>{{summary}}</p>
+                <p>
+                    {{#each tags}}
+                    <span>{{this}}</span> {{/each}}
+                </p>
+            </dd>
+        </dl>
+    </a>
+    {{/each}}
+</div>

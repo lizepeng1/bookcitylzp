@@ -1,0 +1,1 @@
+"use strict";define(["jquery","handle"],function(r,u){return function(e,n,t){var i=u.compile(e);r(t).html(i(n))}});

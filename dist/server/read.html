@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/read.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 阅读内容部分 -->
+        <div class="content">
+            <div class="scroll">
+                <script id="ht" type="text/x-handlebars-template">
+                    <div class="read-cont">
+                        <h2>{{t}}</h2>
+                        {{#each p}}
+                        <p>{{this}}</p>
+                        {{/each}}
+                    </div>
+                </script>
+            </div>
+        </div>
+        <!-- 遮罩层部分 -->
+        <div class="mask">
+            <div class="top">
+                <a href="http://localhost:8089/server/detail.html?id=352876">返回</a>
+                <span>更多</span>
+            </div>
+            <div class="mid"></div>
+            <div class="bot">
+                <!-- 上一章  下一章 -->
+                <div class="zhang">
+                    <span class="upmun">上一章</span>
+                    <p class="read_nav">9/366</p>
+                    <span class="downmun">下一章</span>
+                </div>
+                <!-- 字号  背景 -->
+                <div class="read-kind">
+                    <p class="read-font">字号 <span>大</span> <span>小</span></p>
+                    <p class="read-bg">背景<span></span><span></span><span></span><span></span><span></span></p>
+                </div>
+                <!-- 尾部 -->
+                <div class="read-foot">
+                    <a>目录</a>
+                    <a>字体</a>
+                    <a>夜间</a>
+                    <a>下载</a>
+                </div>
+            </div>
+        </div>
+        <!-- 目录页 -->
+        <div class="mun_nav">
+            <script id="mun_nav" type="text/x-handlebars-template">
+                <ul>
+                    {{#each toc}}
+                    <li>{{title}}</li>
+                    {{/each}}
+                </ul>
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/lib/require.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    require(["read"])
+</script>

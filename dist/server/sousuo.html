@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/sousuo.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <i class="iconfont icon-xiangzuo"></i>
+            <p>
+                <i class="iconfont icon-fangdajing"></i>
+                <input type="text" placeholder="请输入书名" class="text">
+                <input type="button" value="搜索" class="btn">
+            </p>
+        </header>
+        <div class="list">
+            <div class="lists">
+                <script id="jl" type="text/x-handlebars-template">
+                    {{#each ads}} {{#if status}}
+                    <span>{{ad_name}}</span> {{else}}
+                    <span class="active">{{ad_name}}</span>{{/if}}{{/each}}
+                </script>
+            </div>
+            <div class="seresult"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- <script src="./js/lib/jquery.js"></script>
+<script src="./js/sousuo.js"></script> -->
+<script src="../js/lib/require.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    require(["sousuo"]);
+</script>
